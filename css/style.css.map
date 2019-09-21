@@ -3,7 +3,9 @@
     "mappings": "",
     "sources": [
         "../sass/style.scss",
-        "../sass/_header.scss"
+        "../sass/_header.scss",
+        "../sass/_scaffolding.scss",
+        "../sass/_variables.scss"
     ],
     "names": [],
     "file": "style.css"
