@@ -187,4 +187,91 @@ img {
     line-height: 26px;
   }
 }
+
+.works {
+  min-height: 100px;
+}
+
+.works__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.works__title {
+  margin: 0 0 15px 0;
+  padding: 0 0 0 5px;
+  font-family: 'Cambria', serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.works__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.works__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 0 15px 0;
+  width: 137.5px;
+  height: 171.5px;
+}
+
+.works__wrapper-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.works__link {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+.works__link--project {
+  padding: 5px 18px 5px 18px;
+  margin-left: 5px;
+  background: #d45e5e;
+}
+
+.works__link--github {
+  padding: 5px 11.5px 5px 11.5px;
+  margin-right: 5px;
+  background: #d45e5e;
+}
 /*# sourceMappingURL=style.css.map */
