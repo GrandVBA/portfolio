@@ -347,4 +347,19 @@ img {
     background: #d45e5e;
   }
 }
+
+.main-footer {
+  background: #d45e5e;
+}
+
+.main-footer__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-footer__about img {
+  display: block;
+  border: 6px solid #fff;
+}
 /*# sourceMappingURL=style.css.map */
