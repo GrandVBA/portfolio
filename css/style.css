@@ -195,7 +195,7 @@ img {
 .works {
   min-height: 100px;
   background-image: url(../img/line-head-works-mobile.png), url(../img/pencil-and-ruler.png);
-  background-position: 0 0, center -40px;
+  background-position: center top, center -40px;
   background-repeat: no-repeat;
 }
 
