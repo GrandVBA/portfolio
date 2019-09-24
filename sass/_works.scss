@@ -33,13 +33,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  //align-items: center;
   
   margin: 0 0 15px 0;
   width: 137.5px;
   height: 171.5px;
+}
 
-  //background: red;
+.works__item--mishka {
+  background: url(../img/mishka.png) no-repeat center;
+  background-size: contain;
 }
 
 .works__wrapper-link {
@@ -49,7 +51,7 @@
   justify-content: space-between;
   min-height: 40px;
 
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .works__link {
@@ -60,16 +62,73 @@
   font-size: 12px;
   font-weight: 400;
   border-radius: 3px;
+  background: $red-color;
+  outline: none;
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    color: $red-color;
+    background: #fff;
+    transition: 0.2s;
+  }
 }
 
 .works__link--project {
   padding: 5px 18px 5px 18px;
   margin-left: 5px;
-  background: $red-color;//#71a83a;
+  //background: $red-color;
 }
 
 .works__link--github {
   padding: 5px 11.5px 5px 11.5px;
   margin-right: 5px;
-  background: $red-color;//#59b6eb;
+  //background: $red-color;
+}
+
+@media (min-width: $desktop-width) {
+  .works__wrapper {
+    width: 982px;
+    padding: 0 109px;
+  }
+
+  .works__title {
+    padding: 0 0 0 7.5px;
+    font-size: 19px;
+  }
+
+  .works__list {
+    justify-content: flex-start;
+  }
+
+  .works__item {
+    margin: 7.5px;
+    width: 145px;
+    height: 145px;
+
+    overflow-y: hidden;
+    transition: 0.5s all;
+    &:hover {
+      .works__wrapper-link {
+        transform: translateY(0px);
+        transition: 0.5s all;
+      }
+    }
+  }
+
+  .works__wrapper-link {
+    transform: translateY(calc(100% + 0px));
+    transition: 0.5s all;
+  }
+
+  .works__link--project {
+    padding: 5px 20px 5px 20px;
+    margin-left: 5px;
+    background: $red-color;
+  }
+  
+  .works__link--github {
+    padding: 5px 13.5px 5px 13.5px;
+    margin-right: 5px;
+    background: $red-color;
+  }
 }
