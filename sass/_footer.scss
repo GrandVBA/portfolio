@@ -110,13 +110,14 @@
   }
 
   .main-footer__wrapper {
-    flex-direction: row;
+    position: relative;
+    flex-direction: column;
     width: 982px;
     padding: 0 109px;
   }
 
   .main-footer__about {
-    width: 500px;
+    width: 700px;
     img {
       display: block;
       width: 100px;
@@ -147,19 +148,20 @@
   }
 
   .main-footer__contact {
+    margin: 0 auto;
     width: 482px;
   }
 
   .main-footer__list {
-    margin: 50px auto 0 auto;
+    margin: 10px auto 0 auto;
     justify-content: space-between;
     align-items: center;
-    width: 120px;
-    height: 120px;
+    width: 210px;
+    height: 50px;
   }
 
   .main-footer__item {
-    margin: 15px;
+    margin: 5px;
   }
 
   .main-footer__copyright {
