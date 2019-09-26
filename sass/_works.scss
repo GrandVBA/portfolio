@@ -83,13 +83,11 @@
 .works__link--project {
   padding: 5px 18px 5px 18px;
   margin-left: 5px;
-  //background: $red-color;
 }
 
 .works__link--github {
   padding: 5px 11.5px 5px 11.5px;
   margin-right: 5px;
-  //background: $red-color;
 }
 
 @media (min-width: $desktop-width) {
@@ -108,23 +106,24 @@
   }
 
   .works__item {
+    position: relative;
     margin: 7.5px;
     width: 145px;
     height: 145px;
 
     overflow-y: hidden;
-    transition: 0.5s all;
     &:hover {
       .works__wrapper-link {
-        transform: translateY(0px);
-        transition: 0.5s all;
+        transform: translateY(-40px);
       }
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
   }
 
   .works__wrapper-link {
-    transform: translateY(calc(100% + 0px));
+    position: absolute;
+    bottom: -40px;
+    width: 145px;
     transition: 0.5s all;
   }
 
