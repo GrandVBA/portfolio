@@ -1,5 +1,5 @@
 .works {
-  padding: 0 0 80px 0;
+  padding: 0 0 100px 0;
   min-height: 100px;
 
   background-image: url(../img/line-head-works-mobile.png), url(../img/pencil-and-ruler.png);
@@ -15,7 +15,7 @@
 
 .works__title {
   margin: 0 0 15px 0;
-  padding: 50px 0 0 5px;
+  padding: 70px 0 0 5px;
 
   font-family: 'Cambria', serif;
   font-size: 15px;
@@ -91,13 +91,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .works {
+    padding: 0 0 140px 0;
+  }
+
   .works__wrapper {
     width: 982px;
     padding: 0 109px;
   }
 
   .works__title {
-    padding: 50px 0 0 7.5px;
+    padding: 70px 0 0 7.5px;
     font-size: 19px;
   }
 
