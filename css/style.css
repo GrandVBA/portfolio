@@ -543,4 +543,27 @@ img {
     margin: 10px auto;
   }
 }
+
+.about-me {
+  font-family: 'Cambria', serif;
+  line-height: 20px;
+}
+
+.about-me__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-me__name {
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.about-me__title {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
