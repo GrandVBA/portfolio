@@ -1,6 +1,6 @@
 .about-me {
   font-family: 'Cambria', serif;
-  line-height: 20px;
+  line-height: 23px;
 }
 
 .about-me__wrapper {
@@ -10,8 +10,8 @@
 }
 
 .about-me__info > img {
-  margin: 25px 0 0 0;
-  //border: 6px solid $red-color;
+  margin: 25px 0 0 -3px;
+  border: 3px solid $red-color;
 }
 
 .about-me__name {
@@ -31,8 +31,11 @@
 .slider {
   /* устанавливаем относительное позиционирование элементу */
   position: relative;
-  margin: 20px 0 120px -15px;
+  margin: 20px 0 100px -15px;
   width: 320px;
+  .about-me__title {
+    margin: 16px 0 16px 15px;
+  }
 }
 
 .slider__items {
@@ -60,6 +63,7 @@
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  height: 250px;
 }
 
 .slider__item_active,
@@ -194,4 +198,66 @@
 
 .slider__indicator_active {
   background-color: #fff;
+}
+
+@media (min-width: $desktop-width) {
+  .about-me__wrapper {
+    width: 982px;
+    padding: 0 109px;
+    font-size: 18px;
+  }
+
+  .about-me__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .about-me__dsktp-wrap {
+    margin: 0 25px;
+    p {
+      margin: 14px 0;
+    }
+  }
+
+  .about-me__name {
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 700;
+  }
+  
+  .about-me__title {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .about-me__text {
+    margin: 35px 0;
+    line-height: 30px;
+    .about-me__title {
+      display: block;
+    }
+  }
+
+  .slider {
+    /* устанавливаем относительное позиционирование элементу */
+    margin: 0 auto 120px auto;
+    width: 640px;
+    .about-me__title {
+      margin: 16px 0 16px 15px;
+      text-align: center;
+    }
+  }
+
+  .slider__items {
+    border-radius: 15px;
+  }
+
+  .slider__item div {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 500px;
+  }
 }

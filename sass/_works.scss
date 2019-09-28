@@ -112,8 +112,8 @@
   .works__item {
     position: relative;
     margin: 7.5px;
-    width: 145px;
-    height: 145px;
+    width: 175px;
+    height: 175px;
 
     overflow-y: hidden;
     &:hover {
@@ -127,18 +127,18 @@
   .works__wrapper-link {
     position: absolute;
     bottom: -40px;
-    width: 145px;
+    width: 175px;
     transition: 0.5s all;
   }
 
   .works__link--project {
-    padding: 5px 20px 5px 20px;
+    padding: 5px 27.5px 5px 27.5px;
     margin-left: 5px;
     background: $red-color;
   }
   
   .works__link--github {
-    padding: 5px 13.5px 5px 13.5px;
+    padding: 5px 21px 5px 21px;
     margin-right: 5px;
     background: $red-color;
   }

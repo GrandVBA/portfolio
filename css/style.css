@@ -42,10 +42,6 @@ img {
   height: auto;
 }
 
-.aboutme-page {
-  min-height: 705px;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -332,8 +328,8 @@ img {
   .works__item {
     position: relative;
     margin: 7.5px;
-    width: 145px;
-    height: 145px;
+    width: 175px;
+    height: 175px;
     overflow-y: hidden;
   }
   .works__item:hover {
@@ -347,17 +343,17 @@ img {
   .works__wrapper-link {
     position: absolute;
     bottom: -40px;
-    width: 145px;
+    width: 175px;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
   .works__link--project {
-    padding: 5px 20px 5px 20px;
+    padding: 5px 27.5px 5px 27.5px;
     margin-left: 5px;
     background: #d45e5e;
   }
   .works__link--github {
-    padding: 5px 13.5px 5px 13.5px;
+    padding: 5px 21px 5px 21px;
     margin-right: 5px;
     background: #d45e5e;
   }
@@ -514,10 +510,7 @@ img {
   }
   .main-footer__text {
     margin: 12px 0 0 7.5px;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 13px;
-    color: #fff;
-    line-height: 17px;
+    font-size: 14px;
   }
   .main-footer__contact {
     margin: 0 auto;
@@ -547,7 +540,7 @@ img {
 
 .about-me {
   font-family: 'Cambria', serif;
-  line-height: 20px;
+  line-height: 23px;
 }
 
 .about-me__wrapper {
@@ -557,7 +550,8 @@ img {
 }
 
 .about-me__info > img {
-  margin: 25px 0 0 0;
+  margin: 25px 0 0 -3px;
+  border: 3px solid #d45e5e;
 }
 
 .about-me__name {
@@ -575,8 +569,12 @@ img {
 .slider {
   /* устанавливаем относительное позиционирование элементу */
   position: relative;
-  margin: 20px 0 120px -15px;
+  margin: 20px 0 100px -15px;
   width: 320px;
+}
+
+.slider .about-me__title {
+  margin: 16px 0 16px 15px;
 }
 
 .slider__items {
@@ -613,6 +611,7 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  height: 250px;
 }
 
 .slider__item_active,
@@ -760,5 +759,69 @@ img {
 
 .slider__indicator_active {
   background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .about-me__wrapper {
+    width: 982px;
+    padding: 0 109px;
+    font-size: 18px;
+  }
+  .about-me__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-me__dsktp-wrap {
+    margin: 0 25px;
+  }
+  .about-me__dsktp-wrap p {
+    margin: 14px 0;
+  }
+  .about-me__name {
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 700;
+  }
+  .about-me__title {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+  }
+  .about-me__text {
+    margin: 35px 0;
+    line-height: 30px;
+  }
+  .about-me__text .about-me__title {
+    display: block;
+  }
+  .slider {
+    /* устанавливаем относительное позиционирование элементу */
+    margin: 0 auto 120px auto;
+    width: 640px;
+  }
+  .slider .about-me__title {
+    margin: 16px 0 16px 15px;
+    text-align: center;
+  }
+  .slider__items {
+    border-radius: 15px;
+  }
+  .slider__item div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
