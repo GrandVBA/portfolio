@@ -9,6 +9,11 @@
   padding: 0 15px;
 }
 
+.about-me__info > img {
+  margin: 25px 0 0 0;
+  //border: 6px solid $red-color;
+}
+
 .about-me__name {
   font-size: 21px;
   font-style: italic;
@@ -26,6 +31,8 @@
 .slider {
   /* устанавливаем относительное позиционирование элементу */
   position: relative;
+  margin: 20px 0 120px -15px;
+  width: 320px;
 }
 
 .slider__items {
@@ -47,6 +54,12 @@
   transition: transform 0.6s ease;
   /* не показывать обратную сторону трансформируемого элемента */
   backface-visibility: hidden;
+}
+
+.slider__item div {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .slider__item_active,

@@ -556,6 +556,10 @@ img {
   padding: 0 15px;
 }
 
+.about-me__info > img {
+  margin: 25px 0 0 0;
+}
+
 .about-me__name {
   font-size: 21px;
   font-style: italic;
@@ -571,6 +575,8 @@ img {
 .slider {
   /* устанавливаем относительное позиционирование элементу */
   position: relative;
+  margin: 20px 0 120px -15px;
+  width: 320px;
 }
 
 .slider__items {
@@ -596,6 +602,17 @@ img {
   /* не показывать обратную сторону трансформируемого элемента */
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+.slider__item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .slider__item_active,
