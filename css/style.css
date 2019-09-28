@@ -569,7 +569,7 @@ img {
 .slider {
   /* устанавливаем относительное позиционирование элементу */
   position: relative;
-  margin: 20px 0 100px -15px;
+  margin: 20px auto 100px auto;
   width: 320px;
 }
 
@@ -668,14 +668,17 @@ img {
   color: #fff;
   text-align: center;
   opacity: 0.5;
+  outline: none;
 }
 
 .slider__control:hover,
 .slider__control:focus {
   color: #fff;
   text-decoration: none;
-  outline: 0;
-  opacity: .9;
+  opacity: 0.9;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
 }
 
 .slider__control_prev {
