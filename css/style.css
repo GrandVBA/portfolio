@@ -915,8 +915,8 @@ img {
 
 .skill__bar--html-css {
   width: 85%;
-  -moz-animation: html-css 2s ease-out;
   -webkit-animation: html-css 2s ease-out;
+          animation: html-css 2s ease-out;
   background-color: #f674a4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
   background-image: linear-gradient(top, #f674a4, #e06995);
@@ -931,10 +931,19 @@ img {
   }
 }
 
+@keyframes html-css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
 .skill__bar--sass-less {
   width: 78%;
-  -moz-animation: sass-less 2s ease-out;
   -webkit-animation: sass-less 2s ease-out;
+          animation: sass-less 2s ease-out;
   background-color: #a1ce5b;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
   background-image: linear-gradient(top, #a1ce5b, #91ba52);
@@ -949,10 +958,19 @@ img {
   }
 }
 
+@keyframes sass-less {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 78%;
+  }
+}
+
 .skill__bar--git {
   width: 76%;
-  -moz-animation: git 2s ease-out;
   -webkit-animation: git 2s ease-out;
+          animation: git 2s ease-out;
   background-color: #f0bb4b;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
   background-image: linear-gradient(top, #f0bb4b, #d9aa44);
@@ -967,10 +985,19 @@ img {
   }
 }
 
+@keyframes git {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 76%;
+  }
+}
+
 .skill__bar--gulp {
   width: 70%;
-  -moz-animation: gulp 2s ease-out;
   -webkit-animation: gulp 2s ease-out;
+          animation: gulp 2s ease-out;
   background-color: #66b3cc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
   background-image: linear-gradient(top, #66b3cc, #5da3ba);
@@ -985,10 +1012,19 @@ img {
   }
 }
 
+@keyframes gulp {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
 .skill__bar--svg {
   width: 55%;
-  -moz-animation: svg 2s ease-out;
   -webkit-animation: svg 2s ease-out;
+          animation: svg 2s ease-out;
   background-color: #FF7F50;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF7F50), to(#FF7F50));
   background-image: linear-gradient(top, #FF7F50, #FF7F50);
@@ -1003,10 +1039,19 @@ img {
   }
 }
 
+@keyframes svg {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
 .skill__bar--js {
   width: 20%;
-  -moz-animation: js 2s ease-out;
   -webkit-animation: js 2s ease-out;
+          animation: js 2s ease-out;
   background-color: #008000;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#008000), to(#228B22));
   background-image: linear-gradient(top, #008000, #228B22);
@@ -1021,10 +1066,19 @@ img {
   }
 }
 
+@keyframes js {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
 .skill__bar--ps {
   width: 19%;
-  -moz-animation: ps 2s ease-out;
   -webkit-animation: ps 2s ease-out;
+          animation: ps 2s ease-out;
   background-color: #DAA520;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#DAA520), to(#B8860B));
   background-image: linear-gradient(top, #DAA520, #B8860B);
@@ -1039,16 +1093,34 @@ img {
   }
 }
 
+@keyframes ps {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 19%;
+  }
+}
+
 .skill__bar--php {
   width: 5%;
-  -moz-animation: php 2s ease-out;
   -webkit-animation: php 2s ease-out;
+          animation: php 2s ease-out;
   background-color: #00BFFF;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00BFFF), to(#87CEFA));
   background-image: linear-gradient(top, #00BFFF, #87CEFA);
 }
 
 @-webkit-keyframes php {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 5%;
+  }
+}
+
+@keyframes php {
   0% {
     width: 0px;
   }
