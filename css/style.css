@@ -891,20 +891,11 @@ img {
 .skill__bar span {
   font-size: 14px;
   font-weight: 700;
+  -moz-animation: showtext 2s forwards;
   -webkit-animation: showtext 2s forwards;
-          animation: showtext 2s forwards;
 }
 
 @-webkit-keyframes showtext {
-  0%, 99% {
-    color: transparent;
-  }
-  100% {
-    color: #fff;
-  }
-}
-
-@keyframes showtext {
   0%, 99% {
     color: transparent;
   }

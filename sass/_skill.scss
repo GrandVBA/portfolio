@@ -58,17 +58,18 @@
   span {
     font-size: 14px;
     font-weight: 700;
-    animation: showtext 2s forwards;
+    -moz-animation: showtext 2s forwards;
+    -webkit-animation: showtext 2s forwards;
   }
 }
 
-@keyframes showtext {
-  0%, 99% {
-    color:transparent;
-  }
-  100% {
-    color:#fff;
-  }
+@-moz-keyframes showtext {
+  0%, 99% { color:transparent;}
+  100% { color:#fff;}
+}
+@-webkit-keyframes showtext {
+  0%, 99% { color:transparent;}
+  100% { color:#fff;}
 }
 
 .skill__bar--html-css {
