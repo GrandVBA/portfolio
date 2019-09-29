@@ -1,0 +1,221 @@
+.skill__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.skill__list {
+  list-style: none;
+  font: 12px "Helvetica Neue", Arial, sans-serif;
+  margin: 50px 0 110px 0;
+  padding: 0;
+	position: relative;
+  line-height: 2em;
+  li {
+    margin-bottom:50px; 
+    background:#e9e5e2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+    background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+    height:20px; 
+    border-radius:5px; 
+    -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+    -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+    box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+    h3 {
+      position:relative; 
+      top:-27px;
+      left: 10px;
+    }
+
+  }
+}
+
+.skill__bar {
+  height:18px; 
+	margin:1px 2px;  
+	position:absolute;
+	border-radius:5px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.skill__bar--html-css {
+	width:85%; 
+	-moz-animation: html-css 2s ease-out;
+	-webkit-animation: html-css 2s ease-out;
+	background-color: #f674a4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+	background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+	background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+	background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+	background-image: -o-linear-gradient(top, #f674a4, #e06995);
+	background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+@-moz-keyframes html-css {
+  0%  { width:0px;} 
+  100%{ width:85%;}  
+}
+@-webkit-keyframes html-css {
+  0%  { width:0px;} 
+  100%{ width:85%;}  
+}
+
+.skill__bar--sass-less {
+	width:78%; 
+	-moz-animation: sass-less 2s ease-out;
+	-webkit-animation: sass-less 2s ease-out;
+	background-color: #a1ce5b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+	background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+@-moz-keyframes sass-less {
+  0%  { width:0px;} 
+  100%{ width:78%;}  
+}
+@-webkit-keyframes sass-less {
+  0%  { width:0px;} 
+  100%{ width:78%;}  
+}
+
+.skill__bar--git {
+	width:76%; 
+	-moz-animation: git 2s ease-out;
+	-webkit-animation: git 2s ease-out;
+	background-color: #f0bb4b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+	background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+@-moz-keyframes git {
+  0%  { width:0px;} 
+  100%{ width:76%;}  
+}
+@-webkit-keyframes git {
+  0%  { width:0px;} 
+  100%{ width:76%;}  
+}
+
+.skill__bar--gulp {
+	width:70%; 
+	-moz-animation: gulp 2s ease-out;
+	-webkit-animation: gulp 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: linear-gradient(top, #66b3cc, #5da3ba);
+}
+
+@-moz-keyframes gulp {
+  0%  { width:0px;} 
+  100%{ width:70%;}  
+}
+@-webkit-keyframes gulp {
+  0%  { width:0px;} 
+  100%{ width:70%;}  
+}
+
+.skill__bar--svg {
+	width:55%; 
+	-moz-animation: svg 2s ease-out;
+	-webkit-animation: svg 2s ease-out;
+	background-color: #FF7F50;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FF7F50), to(#FF7F50));
+	background-image: -webkit-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: -moz-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: -ms-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: -o-linear-gradient(top, #FF7F50, #FF7F50);
+	background-image: linear-gradient(top, #FF7F50, #FF7F50);
+}
+
+@-moz-keyframes svg {
+  0%  { width:0px;} 
+  100%{ width:55%;}  
+}
+@-webkit-keyframes svg {
+  0%  { width:0px;} 
+  100%{ width:55%;}  
+}
+
+.skill__bar--js {
+	width:20%; 
+	-moz-animation: js 2s ease-out;
+	-webkit-animation: js 2s ease-out;
+	background-color: #90EE90;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#90EE90), to(#98FB98));
+	background-image: -webkit-linear-gradient(top, #90EE90, #98FB98);
+	background-image: -moz-linear-gradient(top, #90EE90, #98FB98);
+	background-image: -ms-linear-gradient(top, #90EE90, #98FB98);
+	background-image: -o-linear-gradient(top, #90EE90, #98FB98);
+	background-image: linear-gradient(top, #90EE90, #98FB98);
+}
+
+@-moz-keyframes js {
+  0%  { width:0px;} 
+  100%{ width:20%;}  
+}
+@-webkit-keyframes js {
+  0%  { width:0px;} 
+  100%{ width:20%;}  
+}
+
+.skill__bar--ps {
+	width:19%; 
+	-moz-animation: ps 2s ease-out;
+	-webkit-animation: ps 2s ease-out;
+	background-color: #DAA520;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DAA520), to(#B8860B));
+	background-image: -webkit-linear-gradient(top, #DAA520, #B8860B);
+	background-image: -moz-linear-gradient(top, #DAA520, #B8860B);
+	background-image: -ms-linear-gradient(top, #DAA520, #B8860B);
+	background-image: -o-linear-gradient(top, #DAA520, #B8860B);
+	background-image: linear-gradient(top, #DAA520, #B8860B);
+}
+
+@-moz-keyframes ps {
+  0%  { width:0px;} 
+  100%{ width:19%;}  
+}
+@-webkit-keyframes ps {
+  0%  { width:0px;} 
+  100%{ width:19%;}  
+}
+
+.skill__bar--php {
+	width:5%; 
+	-moz-animation: php 2s ease-out;
+	-webkit-animation: php 2s ease-out;
+	background-color: #00BFFF;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00BFFF), to(#87CEFA));
+	background-image: -webkit-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: -moz-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: -ms-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: -o-linear-gradient(top, #00BFFF, #87CEFA);
+	background-image: linear-gradient(top, #00BFFF, #87CEFA);
+}
+
+@-moz-keyframes php {
+  0%  { width:0px;} 
+  100%{ width:5%;}  
+}
+@-webkit-keyframes php {
+  0%  { width:0px;} 
+  100%{ width:5%;}  
+}
