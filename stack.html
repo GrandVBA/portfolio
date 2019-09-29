@@ -19,10 +19,10 @@
 						<a href="index.html" class="main-header__link">Главная</a>
 					</li>
 					<li class="main-header__item">
-						<a href="#" class="main-header__link main-header__link--current">Обо мне</a>
+						<a href="about-me.html" class="main-header__link">Обо мне</a>
 					</li>
 					<li class="main-header__item">
-						<a href="stack.html" class="main-header__link">Стек</a>
+						<a href="#" class="main-header__link main-header__link--current">Стек</a>
 					</li>
 					<li class="main-header__item">
 						<a href="#" class="main-header__link">Резюме</a>
@@ -30,62 +30,21 @@
 				</ul>
 			</div>
 		</header>
-		<main class="aboutme-page">
-			<section class="about-me">
-				<div class="about-me__wrapper">
-					<div class="about-me__info">
-						<img src="img/head-photo.jpg" width="200" height="350" alt="Фото Бондаренко В. А.">
-						<div class="about-me__dsktp-wrap">
-							<h2 class="about-me__name">Бондаренко Вадим Александрович</h2>
-							<p class="about-me__age"><span class="about-me__title">Возраст:</span> 27 лет</p>
-							<p class="about-me__kids"><span class="about-me__title">Семейное положение:</span> женат, 2-е детей</p>
-							<p class="about-me__education"><span class="about-me__title">Образование:</span> н. в., НИ ТПУ - Мененджмент организации</p>
-							<p class="about-me__hobby"><span class="about-me__title">Хобби:</span> футбол, путешествия, уединение с природой</p>
-						</div>
-						<p class="about-me__text"><span class="about-me__title">Немного о том как я окозался в IT:</span><br>В сфере веб-разработки я оказался случайно, наткнувшись на бесплатные курсы в сети. Данные курсы были в виде мини-заданий которые нужно было решить с помощью кода. Перед каждым решением давался материал к изучению. Поняв для себя, что это не так сложно как я предполагал, я начал искать хороший источник информации для того что бы сразу научится всё делать правильно. И естественно наткнулся на кучу различных школ которые готовы были меня научить от и до, но как и везде всё стоит определенных денег (и это правильно). Буду с вами честен... Всю информацию которую мне предлагали на платной основе я нашел бесплатно, и таким образом получил необходимые знания &#128521.<br><span class="about-me__text--ps">P.S. Верю только в практический подход в изучении и оттачивании материала.</span></p>
-						
-						
-					</div>
-				</div>
-				<div id="slider" class="slider">
-						<h3 class="about-me__title">Немного семейных фото:</h3>
-						<ol class="slider__indicators">
-							<li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
-							<li class="slider__indicator" data-slide-to="1"></li>
-							<li class="slider__indicator" data-slide-to="2"></li>
-							<li class="slider__indicator" data-slide-to="3"></li>
-							<li class="slider__indicator" data-slide-to="4"></li>
-						</ol>
-						<div class="slider__items">
-							<div class="slider__item slider__item_active">
-								<div>
-									<img src="img/one-photo.jpg" alt="Фото с семьей на пляже">
-								</div>
-							</div>
-							<div class="slider__item">
-								<div style="background-color: gray;">
-									<img src="img/two-photo.jpg" alt="Я с матвеем">
-								</div>
-							</div>
-							<div class="slider__item">
-								<div>
-									<img src="img/three-photo.jpg" alt="С аней у дерева">
-								</div>
-							</div>
-							<div class="slider__item">
-								<div>
-									<img src="img/four-photo.jpg" alt="Аня с детьми">
-								</div>
-							</div>
-							<div class="slider__item">
-								<div>
-									<img src="img/five-photo.jpg" alt="Я с Мишкой">
-								</div>
-							</div>
-						</div>
-						<a class="slider__control slider__control_prev" href="#" role="button"></a>
-						<a class="slider__control slider__control_next" href="#" role="button"></a>
-					</div>
+		<main class="stack-page">
+			<section class="skill">
+        <div class="skill__wrapper">
+          <h2 class="skill__title">Стек технологий</h2>
+          <ul class="skill__list">
+            <li><span class="skill__bar skill__bar--html-css"><span>85%</span></span><h3>HTML + CSS</h3></li>
+            <li><span class="skill__bar skill__bar--sass-less"><span>78%</span></span><h3>SASS/LESS</h3></li>
+            <li><span class="skill__bar skill__bar--git"><span>76%</span></span><h3>Git</h3></li>
+            <li><span class="skill__bar skill__bar--gulp"><span>70%</span></span><h3>Gulp</h3></li>
+            <li><span class="skill__bar skill__bar--svg"><span>55%</span></span><h3>SVG (спрайты)</h3></li>
+            <li><span class="skill__bar skill__bar--js"><span>20%</span></span><h3>JavaScript</h3></li>
+            <li><span class="skill__bar skill__bar--ps"><span>19%</span></span><h3>Photoshop</h3></li>
+            <li><span class="skill__bar skill__bar--php"></span><span></span><h3>PHP</h3></li>
+          </ul>
+        </div>
       </section>
 		</main>
 		<footer class="main-footer">
@@ -94,7 +53,7 @@
 					<img src="img/my-photo-bw.jpg" width="100" height="100" alt="Моё фото">
 					<h2 class="main-footer__name">Вадим Бондаренко</h2>
 					<p class="main-footer__location">Белово, Россия</p>
-					<p class="main-footer__text">Привет. Я разрабатываю сайты с адаптивным и резиновым дизайном. Могу свободно добавить оживление в виде всплывающего окна (pop-up), слайдера, выезжающего меню и т.п. Только Front-end. Весь стек технологий которые я использую можно посмотреть в отдельной вкладке. Связь со мной лучше держать по телефону или в Telegram. </p>
+					<p class="main-footer__text">Привет. Я разрабатываю сайты с адаптивным и резиновым дизайном. Могу свободно добавить оживление в виде всплывающего окна (pop-up), слайдера, выезжающего меню и т.п. Только Front-end. Весь стек технологий которые я использую можно посмотреть в отдельной вкладке. Связь со мной лучше держать по телефону или в Telegram.</p>
 				</div>
 				<div class="main-footer__contact">
 					<ul class="main-footer__list">
@@ -117,8 +76,5 @@
 				</div>
 			</div>
 		</footer>
-
-		<script src="js/slider.js"></script>
-
 	</body>
 </html>
