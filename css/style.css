@@ -886,13 +886,10 @@ img {
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
   box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
-  vertical-align: middle;
 }
 
 .skill__bar span {
-  display: block;
-  vertical-align: middle;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 700;
   -moz-animation: showtext 2s forwards;
   -webkit-animation: showtext 2s forwards;
