@@ -889,8 +889,11 @@ img {
 }
 
 .skill__bar span {
+  display: block;
+  height: 18px;
   font-size: 14px;
   font-weight: 700;
+  line-height: 19px;
   -moz-animation: showtext 2s forwards;
   -webkit-animation: showtext 2s forwards;
 }
