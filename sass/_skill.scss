@@ -56,10 +56,11 @@
 	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
   box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
   span {
+    display: block;
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
-    padding: 4px;
+    padding-top: 5px;
     -moz-animation: showtext 2s forwards;
     -webkit-animation: showtext 2s forwards;
   }
@@ -288,6 +289,7 @@
     height: 23px;
     span {
       font-size: 17px;
+      padding: 3px;
     }
   }
 }
