@@ -877,6 +877,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 18px;
   margin: 1px 2px;
   position: absolute;
@@ -890,7 +893,6 @@ img {
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
-  padding-top: 3.5px;
   -moz-animation: showtext 2s forwards;
   -webkit-animation: showtext 2s forwards;
 }
