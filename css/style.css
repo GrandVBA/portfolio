@@ -890,10 +890,10 @@ img {
 
 .skill__bar span {
   display: block;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 1;
-  padding-top: 3.35px;
+  padding-top: 4.5px;
   -moz-animation: showtext 2s forwards;
   -webkit-animation: showtext 2s forwards;
 }
