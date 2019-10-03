@@ -26,6 +26,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   min-width: 320px;
@@ -50,6 +51,16 @@ img {
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
+}
+
+.progress {
+  width: 0%;
+  height: 2px;
+  background-color: #d45e5e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
 .main-header {
