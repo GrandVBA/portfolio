@@ -1205,4 +1205,41 @@ img {
     padding: 0 0 0 12px;
   }
 }
+
+.experience__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-family: 'Cambria', serif;
+  font-style: italic;
+  line-height: 20px;
+}
+
+.experience__title {
+  font-size: 18px;
+  text-align: center;
+  margin: 25px 0;
+  font-weight: 400;
+}
+
+.experience__text {
+  font-size: 14px;
+}
+
+.company {
+  border-collapse: collapse;
+  margin: 0 0 100px 0;
+  text-align: center;
+}
+
+.company td {
+  font-style: normal;
+  font-size: 9px;
+  border: 1px solid #d45e5e;
+  line-height: 20px;
+}
+
+.company td img {
+  padding: 8px 0 0 0;
+}
 /*# sourceMappingURL=style.css.map */
