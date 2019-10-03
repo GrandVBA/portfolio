@@ -25,7 +25,7 @@
 						<a href="#" class="main-header__link main-header__link--current">Стек</a>
 					</li>
 					<li class="main-header__item">
-						<a href="#" class="main-header__link">Резюме</a>
+						<a href="#" class="main-header__link">Опыт</a>
 					</li>
 				</ul>
 			</div>
@@ -35,15 +35,101 @@
         <div class="skill__wrapper">
           <h2 class="skill__title">Стек технологий</h2>
           <ul class="skill__list">
-            <li><span class="skill__bar skill__bar--html-css"><span>85%</span></span><h3>HTML + CSS</h3></li>
-            <li><span class="skill__bar skill__bar--sass-less"><span>78%</span></span><h3>SASS/LESS</h3></li>
-            <li><span class="skill__bar skill__bar--git"><span>76%</span></span><h3>Git</h3></li>
-            <li><span class="skill__bar skill__bar--gulp"><span>70%</span></span><h3>Gulp</h3></li>
-            <li><span class="skill__bar skill__bar--svg"><span>55%</span></span><h3>SVG (спрайты)</h3></li>
-            <li><span class="skill__bar skill__bar--js"><span>20%</span></span><h3>JavaScript</h3></li>
-            <li><span class="skill__bar skill__bar--ps"><span>19%</span></span><h3>Photoshop</h3></li>
-            <li><span class="skill__bar skill__bar--php"></span><span></span><h3>PHP</h3></li>
-          </ul>
+						<li>
+							<span class="skill__bar skill__bar--html-css">
+								<span>85%</span>
+							</span>
+							<h3>HTML + CSS</h3>
+						</li>
+            <li>
+							<span class="skill__bar skill__bar--sass-less">
+								<span>78%</span>
+							</span>
+							<h3>SASS/LESS</h3>
+						</li>
+            <li>
+							<span class="skill__bar skill__bar--git">
+								<span>76%</span>
+							</span>
+							<h3>Git</h3>
+						</li>
+            <li>
+							<span class="skill__bar skill__bar--gulp">
+								<span>70%</span>
+							</span>
+							<h3>Gulp</h3>
+						</li>
+            <li>
+							<span class="skill__bar skill__bar--svg">
+								<span>55%</span>
+							</span>
+							<h3>SVG (спрайты)</h3>
+						</li>
+						<li>
+							<span class="skill__bar skill__bar--js">
+								<span>20%</span>
+							</span>
+							<h3>JavaScript</h3>
+						</li>
+						<li>
+							<span class="skill__bar skill__bar--ps">
+								<span>19%</span>
+							</span>
+							<h3>Photoshop</h3>
+						</li>
+						<li>
+							<span class="skill__bar skill__bar--php">
+								<span></span>
+							</span>
+							<h3>PHP</h3>
+						</li>
+					</ul>
+					
+					<div class="skill__text">
+						<h3>О процессе работы:</h3>
+						<p>При написании кода я всегда стараюсь всё максимально автоматизировать и ускорить. Для этого я использую препроцессоры + gulp или плагины в VSCode. Обязательно LiveReload для автообновления страницы. Мой лучший друг в работе, это система контроля версий Git с терминалом для более быстрого доступа и каким либо изменениям. Ещё один важный плюс системы Git это удобство для командной работы над проектом. </p>
+						<h4>При верстке проекта я иду по простому алгоритму действий:</h4>
+						<ol class="algorithm">
+							<li class="algorithm__item">
+								Настройка автоматизации и рабочей области (Git, Gulp, тестирование)
+							</li>
+							<li class="algorithm__item">
+								Смысловая html верстка всех страниц.
+							</li>
+							<li class="algorithm__item">
+								Выгрузка графики, и применение нужной графики к верстке.
+							</li>
+							<li class="algorithm__item">	
+								Обязательная проверка на доступность, переключение интерактивных элементов табом и стрелочками, работа формы без мышки.
+							</li>
+							<li class="algorithm__item">
+								Базовая стилизация
+								<ol class="algorithm__base">
+									<li>
+										Установка шрифта и нормализатора.
+									</li>
+									<li>
+										Глобальные текстовые и фоновые праметры (настройка основного шрифта, подключение фонов, глобальные стили для ссылок), для body, a, img и т.д. - scaffolding
+									</li>
+									<li>
+										Далее, перебираю весь документ на стили в формате (цвет фона, цвет текста, размер текста, размер строки, жирность, состояния hover, active, focus)
+									</li>
+								</ol>
+							</li>
+							<li class="algorithm__item">
+								Делаю сетку (флексы)
+							</li>
+							<li class="algorithm__item">
+								Ставлю декоративные элементы (svg, анимации и т.д.) и делаю окончательную стилизацию.
+							</li>
+							<li class="algorithm__item">
+								Доработка с помощью JavaScript.
+							</li>
+						</ol>
+						<p>
+							Конечно же это не строгий алгоритм действий, я всегда исхожу из поставленой задачи и сложности её решения.
+						</p>
+					</div>
         </div>
       </section>
 		</main>
@@ -54,6 +140,7 @@
 					<h2 class="main-footer__name">Вадим Бондаренко</h2>
 					<p class="main-footer__location">Белово, Россия</p>
 					<p class="main-footer__text">Привет. Я разрабатываю сайты с адаптивным и резиновым дизайном. Могу свободно добавить оживление в виде всплывающего окна (pop-up), слайдера, выезжающего меню и т.п. Только Front-end. Весь стек технологий которые я использую можно посмотреть в отдельной вкладке. Связь со мной лучше держать по телефону или в Telegram.</p>
+					<p class="main-footer__ps">P.S. Сайт адаптивен</p>
 				</div>
 				<div class="main-footer__contact">
 					<ul class="main-footer__list">

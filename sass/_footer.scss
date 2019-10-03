@@ -63,12 +63,17 @@
   }
 }
 
-.main-footer__text {
+.main-footer__text,
+.main-footer__ps {
   margin: 12px 0 0 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   color: #fff;
   line-height: 17px;
+}
+
+.main-footer__ps {
+  font-style: italic;
 }
 
 .main-footer__list {
@@ -144,13 +149,18 @@
     font-size: 14px;
   }
 
+  .main-footer__ps {
+    margin: 6px 0 0 7.5px;
+    font-size: 13px;
+  }
+
   .main-footer__contact {
     margin: 0 auto;
     width: 482px;
   }
 
   .main-footer__list {
-    margin: 10px auto 0 auto;
+    margin: 0 auto 0 auto;
     justify-content: space-between;
     align-items: center;
     width: 210px;

@@ -184,7 +184,7 @@ img {
   display: block;
   margin: 0;
   font-family: 'Cambria', serif;
-  font-size: 11px;
+  font-size: 15px;
   font-style: italic;
   font-weight: 400;
   line-height: 20px;
@@ -436,12 +436,17 @@ img {
   background: url(../img/location.svg) no-repeat center;
 }
 
-.main-footer__text {
+.main-footer__text,
+.main-footer__ps {
   margin: 12px 0 0 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   color: #fff;
   line-height: 17px;
+}
+
+.main-footer__ps {
+  font-style: italic;
 }
 
 .main-footer__list {
@@ -515,12 +520,16 @@ img {
     margin: 12px 0 0 7.5px;
     font-size: 14px;
   }
+  .main-footer__ps {
+    margin: 6px 0 0 7.5px;
+    font-size: 13px;
+  }
   .main-footer__contact {
     margin: 0 auto;
     width: 482px;
   }
   .main-footer__list {
-    margin: 10px auto 0 auto;
+    margin: 0 auto 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -544,6 +553,8 @@ img {
 .about-me {
   font-family: 'Cambria', serif;
   line-height: 23px;
+  font-style: italic;
+  line-height: 25px;
 }
 
 .about-me__wrapper {
@@ -559,13 +570,11 @@ img {
 
 .about-me__name {
   font-size: 21px;
-  font-style: italic;
   font-weight: 700;
 }
 
 .about-me__title {
   font-size: 16px;
-  font-style: italic;
   font-weight: 700;
 }
 
@@ -779,6 +788,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 95%;
+    margin: 0 auto;
   }
   .about-me__dsktp-wrap {
     margin: 0 25px;
@@ -836,7 +847,7 @@ img {
 
 .skill__title {
   font-family: 'Cambria', serif;
-  font-size: 15px;
+  font-size: 18px;
   font-style: italic;
   font-weight: 400;
   line-height: 20px;
@@ -847,7 +858,7 @@ img {
 .skill__list {
   list-style: none;
   font: 12px "Helvetica Neue", Arial, sans-serif;
-  margin: 50px 0 110px 0;
+  margin: 50px 0;
   padding: 0;
   position: relative;
   line-height: 2em;
@@ -859,7 +870,7 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
   background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
   height: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
   box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
 }
@@ -877,34 +888,28 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 18px;
   margin: 1px 2px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
   box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
 }
 
 .skill__bar span {
-  font-size: 14px;
+  display: block;
+  font-size: 10px;
   font-weight: 700;
+  line-height: 1;
+  padding-top: 4.5px;
+  -moz-animation: showtext 2s forwards;
   -webkit-animation: showtext 2s forwards;
-          animation: showtext 2s forwards;
 }
 
 @-webkit-keyframes showtext {
-  0%, 99% {
-    color: transparent;
-  }
-  100% {
-    color: #fff;
-  }
-}
-
-@keyframes showtext {
   0%, 99% {
     color: transparent;
   }
@@ -1129,6 +1134,35 @@ img {
   }
 }
 
+.algorithm, .algorithm__base {
+  list-style: none;
+  counter-reset: li;
+}
+
+.algorithm li::before, .algorithm__base li::before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+  font-weight: 900;
+}
+
+.skill__text {
+  font-family: 'Cambria', serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 0 0 90px 0;
+}
+
+.skill__text ol {
+  margin: 0;
+  padding: 0;
+}
+
+.skill__text ol .algorithm__base {
+  padding: 0 0 0 12px;
+}
+
 @media (min-width: 1200px) {
   .skill__wrapper {
     width: 982px;
@@ -1139,13 +1173,36 @@ img {
     font-size: 21px;
     font-style: italic;
     font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    margin: 30px 0;
   }
   .skill__list {
-    width: 65%;
-    margin: 50px auto 120px auto;
+    width: 70%;
+    margin: 50px auto 50px auto;
+  }
+  .skill__list li {
+    margin-bottom: 40px;
+    height: 25px;
+  }
+  .skill__bar {
+    height: 23px;
+  }
+  .skill__bar span {
+    font-size: 17px;
+    padding: 3px;
+  }
+  .skill__text {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto 90px auto;
+    width: 90%;
+  }
+  .skill__text ol {
+    margin: 0;
+    padding: 0;
+  }
+  .skill__text ol .algorithm__base {
+    padding: 0 0 0 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
