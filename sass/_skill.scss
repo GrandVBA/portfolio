@@ -1,7 +1,13 @@
+.skill {
+  background-image: url(../img/line-head-works-mobile.png), url(../img/pencil-and-ruler.png);
+  background-position: center top, center -40px;
+  background-repeat: no-repeat;
+}
+
 .skill__wrapper {
   width: 290px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 50px 15px 0 15px;
 }
 
 .skill__title {
@@ -243,7 +249,7 @@
 @media (min-width: $desktop-width) {
   .skill__wrapper {
     width: 982px;
-    padding: 0 109px;
+    padding: 50px 109px 0 109px;
   }
 
   .skill__title {

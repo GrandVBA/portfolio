@@ -3,12 +3,16 @@
   line-height: 23px;
   font-style: italic;
   line-height: 25px;
+
+  background-image: url(../img/line-head-works-mobile.png), url(../img/pencil-and-ruler.png);
+  background-position: center top, center -40px;
+  background-repeat: no-repeat;
 }
 
 .about-me__wrapper {
   width: 290px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 50px 15px 0 15px;
 }
 
 .about-me__info > img {
@@ -203,7 +207,7 @@
 @media (min-width: $desktop-width) {
   .about-me__wrapper {
     width: 982px;
-    padding: 0 109px;
+    padding: 50px 109px 0 109px;
     font-size: 18px;
   }
 
@@ -253,6 +257,7 @@
   }
 
   .slider__items {
+    border: 6px dotted $red-color;
     border-radius: 15px;
   }
 
