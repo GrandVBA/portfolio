@@ -273,12 +273,17 @@ img {
 
 .works__item--mishka {
   background: url(../img/mishka.png) no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .works__item--midgard {
-  background: url(../img/midgard.PNG) no-repeat center;
-  background-size: cover;
+  background: url(../img/mg.JPG) no-repeat center;
+  background-size: contain;
+}
+
+.works__item--popup {
+  background: url(../img/test.JPG) no-repeat center;
+  background-size: contain;
 }
 
 .works__wrapper-link {
@@ -495,7 +500,7 @@ img {
   font-size: 13px;
   font-style: italic;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 19px;
   text-align: center;
 }
 
